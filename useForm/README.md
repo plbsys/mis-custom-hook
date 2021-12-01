@@ -3,7 +3,10 @@
 
 Ejemplo de uso:
 ```
-    const { counter, increment, decrement, reset } = useCounter(url);
+    const initialForm = {
+        name: '',
+        age: 0,
+        email: ''
+    };
+    const [ values, handleInputChange, reset ] = useForm( initialForm );
 ```
-
-useCounter() // recibe un valor por defecto
